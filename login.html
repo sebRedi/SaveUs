@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class=" -webkit-"><head>
+
+    <meta charset="UTF-8">
+        
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+      
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+      
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+      
+      
+    <title>Help US - Iniciar sesión</title>
+        
+        
+        
+        
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+      
+    body{
+          margin: 0;
+          padding: 0;
+          background: #fff;
+      
+          color: #fff;
+          font-family: Arial;
+          font-size: 12px;
+    }
+      
+    .body{
+          position: absolute;
+          top: -20px;
+          left: -20px;
+          right: -40px;
+          bottom: -40px;
+          width: auto;
+          height: auto;
+          background-image: url(https://img.freepik.com/foto-gratis/estetoscopio-medico-sobre-fondo-azul_23-2147652363.jpg);
+          background-size: cover;
+          -webkit-filter: blur(5px);
+          z-index: 0;
+    }
+      
+    .grad{
+          position: absolute;
+          top: -20px;
+          left: -20px;
+          right: -40px;
+          bottom: -40px;
+          width: auto;
+          height: auto;
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+          z-index: 1;
+          opacity: 0.7;
+    }
+      
+    .header{
+          position: absolute;
+          top: calc(50% - 35px);
+          left: calc(50% - 255px);
+          z-index: 2;
+    }
+      
+    .header div{
+          float: left;
+          color: #fff;
+          font-family: 'Exo', sans-serif;
+          font-size: 35px;
+          font-weight: 200;
+    }
+      
+    .header div span{
+          color: #5379fa !important;
+    }
+      
+    .login{
+          position: absolute;
+          top: calc(50% - 75px);
+          left: calc(50% - 50px);
+          height: 150px;
+          width: 350px;
+          padding: 10px;
+          z-index: 2;
+    }
+      
+    .login input[type=text]{
+          width: 250px;
+          height: 30px;
+          background: transparent;
+          border: 1px solid rgba(255,255,255,0.6);
+          border-radius: 2px;
+          color: #fff;
+          font-family: 'Exo', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 4px;
+    }
+      
+    .login input[type=password]{
+          width: 250px;
+          height: 30px;
+          background: transparent;
+          border: 1px solid rgba(255,255,255,0.6);
+          border-radius: 2px;
+          color: #fff;
+          font-family: 'Exo', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 4px;
+          margin-top: 10px;
+    }
+      
+    .login input[type=button]{
+          width: 260px;
+          height: 35px;
+          background: #fff;
+          border: 1px solid #fff;
+          cursor: pointer;
+          border-radius: 2px;
+          color: #a18d6c;
+          font-family: 'Exo', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 6px;
+          margin-top: 10px;
+    }
+      
+    .login input[type=button]:hover{
+          opacity: 0.8;
+    }
+      
+    .login input[type=button]:active{
+          opacity: 0.6;
+    }
+      
+    .login input[type=text]:focus{
+          outline: none;
+          border: 1px solid rgba(255,255,255,0.9);
+    }
+      
+    .login input[type=password]:focus{
+          outline: none;
+          border: 1px solid rgba(255,255,255,0.9);
+    }
+      
+    .login input[type=button]:focus{
+          outline: none;
+    }
+      
+    ::-webkit-input-placeholder{
+         color: rgba(255,255,255,0.6);
+    }
+      
+    ::-moz-input-placeholder{
+         color: rgba(255,255,255,0.6);
+    }
+    </style>
+      
+    <script>
+    window.console = window.console || function(t) {};
+    </script>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+      
+        
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+     window.parent.postMessage("resize", "*");
+    }
+    </script>
+      
+      
+    </head>
+      
+    <body translate="no">
+    <div class="body"></div>
+            <div class="grad"></div>
+            <div class="header">
+                <div>Help<span>US</span></div>
+            </div>
+            <br>
+            <div class="login">
+                    <input type="text" placeholder="Usuario" name="user"><br>
+                    <input type="password" placeholder="Contraseña" name="password"><br>
+                    <input type="button" value="Inicar sesión">
+            </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        
+      
+      
+      
+      
+       
+    </body></html>
